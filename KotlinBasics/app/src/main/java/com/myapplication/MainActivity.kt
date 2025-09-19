@@ -1,6 +1,7 @@
 package com.myapplication
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -27,22 +28,62 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
-        week02Variables()
-        week02Functions()
+        //week02Variables()
+        //week02Functions()
+        //week03Classes()
+        week03Collections()
     }
 }
 
-fun week02Variables() {
-/*    println("Week02 Variables");
+private fun week03Collections() {
+    Log.d("KotlinWeek03" ,"week03 == Kotlin Collections ==")
 
-    val courseName = "Mobile Programming"
-    // courseName = "IoT Programming"
+    val fruits = listOf("apple", "banana", "orange")
+    //fruits.add("kiwi")
+    Log.d("KotlinWeek03" ,"Fruits : $fruits")
 
-    var week = 1
-    week = 2
+    for (fruit in fruits) {
+        Log.d("KotlinWeek03" ,"Fruits : $fruit")
+    }
+}
 
-    println("Course : $courseName")
-    println("Week : $week")*/
+private fun week03Classes() {
+    println("== Kotlin Classes ==")
+
+    class Student {
+        var name: String = ""
+        var age: Int = 0;
+
+        fun introduce() {
+            println("Hi, I'm $name and I'm $age years old")
+        }
+    }
+    val student = Student()
+    student.name = "식민심"
+    student.age = 22
+    student.introduce();
+
+    data class Person(val name: String, val age: Int)
+
+    var person1 = Person("Lee", 22)
+    var person2 = Person("Lee", 22)
+
+    println("Person1 : $person1")
+    println("Equal? : ${person1 == person2}")
+
+}
+
+private fun week02Variables() {
+    /*    println("Week02 Variables");
+
+        val courseName = "Mobile Programming"
+        // courseName = "IoT Programming"
+
+        var week = 1
+        week = 2
+
+        println("Course : $courseName")
+        println("Week : $week")*/
 
     println("== Kotlin Variable ==")
 
