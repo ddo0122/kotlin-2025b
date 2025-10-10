@@ -1,19 +1,26 @@
 package com.appweek04
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
 import android.content.Intent
 
 class MainActivity : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         val buttonGreeting = findViewById<Button>(R.id.buttonGreeting)
+        val buttonCounter = findViewById<Button>(R.id.buttonCount)
 
         buttonGreeting.setOnClickListener {
             startActivity(Intent(this, GreetingActivity::class.java))
+        }
+
+        buttonCounter.setOnClickListener {
+            startActivity(Intent(this, CounterActivity::class.java))
         }
     }
 }
