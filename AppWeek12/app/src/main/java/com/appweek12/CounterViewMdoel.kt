@@ -4,9 +4,13 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
+
 class CounterViewMdoel: ViewModel() {
-    private val _count = MutableLiveData(0)
-    val count: LiveData<Int> = _count
+    private val _count = MutableStateFlow(0)
+    val count: StateFlow<Int> = _count.asStateFlow()
 
     fun increment() {
         _count.value = (_count.value ?: 0) + 1
