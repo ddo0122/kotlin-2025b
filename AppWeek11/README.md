@@ -5,7 +5,7 @@
 This document covers Week 11 of the Kotlin learning project. Building on the Room Database fundamentals from Week 10, this week focuses on real-time data updates through Flow and more efficient asynchronous task processing.
 
 ## Project Overview
-- **Path**: `D:\kotlin-2025b\AppWeek11`
+- **Path**: `D:\kotlin-2025a\AppWeek11`
 - **Environment**: Android Studio, Kotlin, XML Views (Empty Views Activity)
 - **Purpose**: Advanced Room Database utilization and reactive UI implementation with Flow
 - **Structure**: Single Activity + Room Database + RecyclerView + Flow
@@ -535,7 +535,7 @@ AppWeek11/
 
 ## How to Run
 
-1. Open project in Android Studio (`D:\kotlin-2025b\AppWeek11`)
+1. Open project in Android Studio (`D:\kotlin-2025a\AppWeek11`)
 2. Verify Room dependencies and KAPT plugin in `build.gradle`
 3. Run Build > Rebuild Project
 4. Build and run on emulator or device

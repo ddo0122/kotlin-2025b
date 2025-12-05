@@ -5,7 +5,7 @@
 This document covers Week 12 of the Kotlin learning project. Building on Week 11's Room Database and Flow, this week teaches systematic UI state management using **ViewModel**. This week uses a simple **Counter example** to clearly understand ViewModel concepts.
 
 ## Project Overview
-- **Path**: `D:\kotlin-2025b\AppWeek12`
+- **Path**: `D:\kotlin-2025a\AppWeek12`
 - **Environment**: Android Studio, Kotlin, XML Views (Empty Views Activity)
 - **Purpose**: UI state management with ViewModel and StateFlow
 - **Structure**: Single Activity + ViewModel + StateFlow
@@ -351,7 +351,7 @@ AppWeek12/
 
 ## How to Run
 
-1. Open project in Android Studio (`D:\kotlin-2025b\AppWeek12`)
+1. Open project in Android Studio (`D:\kotlin-2025a\AppWeek12`)
 2. Verify required dependencies in `build.gradle`
 3. Run Build > Rebuild Project
 4. Build and run on emulator or device
@@ -515,6 +515,4 @@ To verify ViewModel's effectiveness:
 
 After completing Week 12, you've mastered ViewModel and StateFlow basics. Next:
 
-- **Week 13+**: Combine Room Database with ViewModel (Student Manager App)
-- **Week 13+**: Repository pattern for data abstraction
-- **Week 13+**: Retrofit for network integration
+- Week 13: Combine Room Database with ViewModel (Student Manager App) & Jetpack Compose
